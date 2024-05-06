@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[About to begin executing Suite ResponsiveED_LMS-SIS enviroment]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Test Insistute]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : AbstractTestNGCucumberTests.setUpClass]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.setUpClass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : InsistuteRunner.beforeclass]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : InsistuteRunner.beforeclass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : AbstractTestNGCucumberTests.runScenario]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.runScenario]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : AbstractTestNGCucumberTests.runScenario]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.runScenario]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : InsistuteRunner.testDownClass]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : InsistuteRunner.testDownClass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : AbstractTestNGCucumberTests.tearDownClass]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.tearDownClass]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-05-06T16:23:39 IST" name="ResponsiveED_LMS-SIS enviroment" finished-at="2024-05-06T16:25:04 IST" duration-ms="85380">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@7a6d7e92]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-05-06T16:23:39 IST" name="Insistute" finished-at="2024-05-06T16:25:04 IST" duration-ms="85380">
+      <class name="com.cucumber.TestRunner.InsistuteRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@7a6d7e92]" started-at="2024-05-06T16:23:39 IST" name="setUpClass" finished-at="2024-05-06T16:23:40 IST" duration-ms="717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7e514482]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.setUpClass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="beforeclass(java.lang.String,java.lang.String)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@7a6d7e92]" started-at="2024-05-06T16:23:40 IST" name="beforeclass" finished-at="2024-05-06T16:24:14 IST" duration-ms="34085" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ResponsiveED]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : InsistuteRunner.beforeclass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@7a6d7e92]" started-at="2024-05-06T16:24:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T16:24:38 IST" duration-ms="24316" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Filter Criteria in Institutions"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Administrator - Institutions Management."]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@formcontrolname='name']"}
+  (Session info: chrome=124.0.6367.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b4a4a4ff75db59c12aeb1cc8610e531f, findElement {using=xpath, value=//input[@formcontrolname='name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58043}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58043/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b4a4a4ff75db59c12aeb1cc8610e531f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@formcontrolname='name']"}
+  (Session info: chrome=124.0.6367.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b4a4a4ff75db59c12aeb1cc8610e531f, findElement {using=xpath, value=//input[@formcontrolname='name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58043}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58043/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b4a4a4ff75db59c12aeb1cc8610e531f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy34.clear(Unknown Source)
+at com.responsiveed.pages.InsistitutePage.setName(InsistitutePage.java:52)
+at com.responsiveed.stepdefination.InstituteStepdef.user_enter_and_select_the(InstituteStepdef.java:30)
+at ✽.user enter and select the "Product" "Name" "Status"(file:///E:/ResponcesiveED_Space/AutomationResponsiveED07/src/test/resources/features/Institute.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin executing following method : AbstractTestNGCucumberTests.runScenario]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.runScenario]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@7a6d7e92]" started-at="2024-05-06T16:24:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T16:25:01 IST" duration-ms="22550" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the insistute as InActive"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Administrator - Institutions Management."]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Ok']"}
+  (Session info: chrome=124.0.6367.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b4a4a4ff75db59c12aeb1cc8610e531f, findElement {using=xpath, value=//button[text()='Ok']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58043}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58043/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b4a4a4ff75db59c12aeb1cc8610e531f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Ok']"}
+  (Session info: chrome=124.0.6367.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b4a4a4ff75db59c12aeb1cc8610e531f, findElement {using=xpath, value=//button[text()='Ok']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58043}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58043/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b4a4a4ff75db59c12aeb1cc8610e531f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy34.click(Unknown Source)
+at com.responsiveed.pages.CommonElements.clickOnConfirmationbutton(CommonElements.java:62)
+at com.responsiveed.stepdefination.CommonSetpdef.clickOnOK(CommonSetpdef.java:25)
+at ✽.Click On OK(file:///E:/ResponcesiveED_Space/AutomationResponsiveED07/src/test/resources/features/Institute.feature:28)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[About to begin executing following method : AbstractTestNGCucumberTests.runScenario]]>
+            </line>
+            <line>
+              <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.runScenario]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="testDownClass()[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@7a6d7e92]" started-at="2024-05-06T16:25:01 IST" name="testDownClass" finished-at="2024-05-06T16:25:01 IST" duration-ms="923" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : InsistuteRunner.testDownClass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testDownClass -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@7a6d7e92]" started-at="2024-05-06T16:25:01 IST" name="tearDownClass" finished-at="2024-05-06T16:25:04 IST" duration-ms="2717" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.tearDownClass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.cucumber.TestRunner.InsistuteRunner -->
+    </test> <!-- Insistute -->
+  </suite> <!-- ResponsiveED_LMS-SIS enviroment -->
+</testng-results>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ResponsiveED_LMS-SIS enviroment]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="common.appname" value="ResponsiveED"/>
+  <listeners>
+    <listener class-name="com.cucumber.utility.ExtentListener"/>
+  </listeners>
+  <test name="Insistute">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="common.appname" value="ResponsiveED"/>
+    <classes>
+      <class name="com.cucumber.TestRunner.InsistuteRunner"/>
+    </classes>
+  </test> <!-- Insistute -->
+</suite> <!-- Failed suite [ResponsiveED_LMS-SIS enviroment] -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="ResponsiveED_LMS-SIS enviroment">
+
+	<listeners>
+		<listener class-name="com.cucumber.utility.ExtentListener" />
+	</listeners>
+
+	<test name="Insistute">
+		<parameter name="browser" value="chrome" />
+		<parameter name="common.appname" value="ResponsiveED" />
+		<classes>
+			<class name="com.cucumber.TestRunner.InsistuteRunner" />						
+		</classes>
+	</test>
+
+</suite>

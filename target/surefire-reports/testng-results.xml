@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[About to begin executing Suite ResponsiveED_LMS-SIS enviroment]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Test Insistute]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : AbstractTestNGCucumberTests.setUpClass]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.setUpClass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : InsistuteRunner.beforeclass]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : InsistuteRunner.beforeclass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : AbstractTestNGCucumberTests.runScenario]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.runScenario]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in com.cucumber.TestRunner.InsistuteRunner]]>
+    </line>
+    <line>
+      <![CDATA[Test Method had the following parameters : null"Verify the Filter Criteria in Institutions","Administrator - Institutions Management.",]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : AbstractTestNGCucumberTests.runScenario]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.runScenario]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in com.cucumber.TestRunner.InsistuteRunner]]>
+    </line>
+    <line>
+      <![CDATA[Test Method had the following parameters : null"Validate the insistute as InActive","Administrator - Institutions Management.",]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : InsistuteRunner.testDownClass]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : InsistuteRunner.testDownClass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : AbstractTestNGCucumberTests.tearDownClass]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.tearDownClass]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-05-06T05:01:34Z" name="ResponsiveED_LMS-SIS enviroment" finished-at="2024-05-06T05:02:33Z" duration-ms="59026">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@793be5ca]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-05-06T05:01:34Z" name="Insistute" finished-at="2024-05-06T05:02:33Z" duration-ms="59026">
+      <class name="com.cucumber.TestRunner.InsistuteRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@793be5ca]" started-at="2024-05-06T10:31:34Z" name="setUpClass" finished-at="2024-05-06T10:31:35Z" duration-ms="518" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@25dc2c0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.setUpClass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="beforeclass(java.lang.String, java.lang.String)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@793be5ca]" started-at="2024-05-06T10:31:35Z" name="beforeclass" finished-at="2024-05-06T10:31:38Z" duration-ms="3353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ResponsiveED]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : InsistuteRunner.beforeclass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@793be5ca]" started-at="2024-05-06T10:31:38Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T10:31:51Z" duration-ms="12735" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Filter Criteria in Institutions"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Administrator - Institutions Management."]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.runScenario]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in com.cucumber.TestRunner.InsistuteRunner]]>
+            </line>
+            <line>
+              <![CDATA[Test Method had the following parameters : null"Verify the Filter Criteria in Institutions","Administrator - Institutions Management.",]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@793be5ca]" started-at="2024-05-06T10:31:51Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-06T10:32:31Z" duration-ms="40396" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the insistute as InActive"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Administrator - Institutions Management."]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.runScenario]]>
+            </line>
+            <line>
+              <![CDATA[Test Method resides in com.cucumber.TestRunner.InsistuteRunner]]>
+            </line>
+            <line>
+              <![CDATA[Test Method had the following parameters : null"Validate the insistute as InActive","Administrator - Institutions Management.",]]>
+            </line>
+            <line>
+              <![CDATA[Test Status: Pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="testDownClass()[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@793be5ca]" started-at="2024-05-06T10:32:31Z" name="testDownClass" finished-at="2024-05-06T10:32:32Z" duration-ms="520" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : InsistuteRunner.testDownClass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testDownClass -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@793be5ca]" started-at="2024-05-06T10:32:32Z" name="tearDownClass" finished-at="2024-05-06T10:32:33Z" duration-ms="1489" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.tearDownClass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.cucumber.TestRunner.InsistuteRunner -->
+    </test> <!-- Insistute -->
+  </suite> <!-- ResponsiveED_LMS-SIS enviroment -->
+</testng-results>
