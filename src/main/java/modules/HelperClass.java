@@ -113,7 +113,8 @@ public class HelperClass implements
 	@Override
 	public void send() {
 		PropertyManager();
-		if(prop.getProperty("auto.email.to").equalsIgnoreCase("true")) {
+		String bool=prop.getProperty("report.send");
+		if(bool.equalsIgnoreCase("true")) {
 			String to=prop.getProperty("auto.email.to");
 			String CC=prop.getProperty("auto.email.cc");;
 			String subject=prop.getProperty("auto.email.subject");;

@@ -1,6 +1,5 @@
 Feature: Administrator - Institutions Management.
 
-
 @Test:Insistute001 @TestName:InsistuteFilter @InsistuteFilter
   Scenario Outline: Verify the Filter Criteria in Institutions
     Given Read the testdata "<TC_ID>" "<FileName>" "<Sheetname>"
@@ -43,3 +42,15 @@ Feature: Administrator - Institutions Management.
     Examples: 
       | TC_ID     	   | FileName              | Sheetname   |
       | TC_ADMS_UM_002 | ResponcesiveEdQA.xlsx | Institution |
+      
+  @Test:Insistute003 @TestName:InsistuteCreateSchoolYear @CreateSchoolYear
+  Scenario Outline: Validate the insistute as InActive  
+   Given Read the testdata "<TC_ID>" "<FileName>" "<Sheetname>"
+    Given the user logs in with valid credentials
+    When the user navigates to the "Screen" screen
+    When user enter and select the "Product" "Name" "Status"
+    Then Click on GO button
+    And Verify the filter record in institutions table "Name" "Active" "System" "IsConsortium" "Action"
+  Examples: 
+      | TC_ID     	   | FileName              | Sheetname   |
+      | TC_ADMS_SY_001 | ResponcesiveEdQA.xlsx | SchoolYear  |

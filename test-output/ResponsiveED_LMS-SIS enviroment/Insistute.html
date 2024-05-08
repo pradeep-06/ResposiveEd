@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Insistute</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 06 16:23:39 IST 2024</td>
+<td>Started on:</td><td>Tue May 07 11:28:21 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>85 seconds (85380 ms)</td>
+<tr><td>Total time:</td><td>86 seconds (86261 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,23 +76,23 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.cucumber.TestRunner.InsistuteRunner.runScenario()'><b>runScenario</b><br>Test class: com.cucumber.TestRunner.InsistuteRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the insistute as InActive", "Administrator - Institutions Management."<br/>
-<a href="#Output-1530013811" onClick='toggleBox("Output-1530013811", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-344682389" onClick='toggleBox("Output-344682389", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1530013811" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1530013811">
+<a href="#Output-344682389" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-344682389">
 About to begin executing following method : AbstractTestNGCucumberTests.runScenario<br/>
 Completed executing following method : AbstractTestNGCucumberTests.runScenario<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Ok&apos;]&quot;}
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-ng-c1168238639=&quot;&quot; mat-flat-button=&quot;&quot; color=&quot;primary&quot; type=&quot;submit&quot; mat-ripple-loader-class-name=&quot;mat-mdc-button-ripple&quot; class=&quot;mdc-button mdc-button--unelevated mat-mdc-unelevated-button mat-primary mat-mdc-button-base&quot;&gt;...&lt;/button&gt; is not clickable at point (1122, 275). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;
   (Session info: chrome=124.0.6367.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b4a4a4ff75db59c12aeb1cc8610e531f, findElement {using=xpath, value=//button[text()=&apos;Ok&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58043}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58043/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b4a4a4ff75db59c12aeb1cc8610e531f
+Command: [ddb52830f56eb84f5072e40802d9dc9a, clickElement {id=f.2E709D54AF240DEEB5BD092C7FC48E70.d.795048439A692CDB3FB38BFD62DDFDF1.e.292}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61729}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61729/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ddb52830f56eb84f5072e40802d9dc9a)] -&gt; xpath: //*[text()=&apos;GO&apos;]//parent::button]
+Session ID: ddb52830f56eb84f5072e40802d9dc9a
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -100,26 +100,23 @@ Session ID: b4a4a4ff75db59c12aeb1cc8610e531f
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy34.click(Unknown Source)
-	at com.responsiveed.pages.CommonElements.clickOnConfirmationbutton(CommonElements.java:62)
-	at com.responsiveed.stepdefination.CommonSetpdef.clickOnOK(CommonSetpdef.java:25)
-	at ✽.Click On OK(file:///E:/ResponcesiveED_Space/AutomationResponsiveED07/src/test/resources/features/Institute.feature:28)
-... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1530013811", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1530013811'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Ok&apos;]&quot;}
+	at com.responsiveed.pages.CommonElements.clickGobutton(CommonElements.java:67)
+	at com.responsiveed.stepdefination.CommonSetpdef.click_on_GO_button(CommonSetpdef.java:52)
+	at ✽.Click on GO button(file:///E:/ResponcesiveED_Space/AutomationResponsiveED07/src/test/resources/features/Institute.feature:53)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace344682389", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace344682389'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-ng-c1168238639=&quot;&quot; mat-flat-button=&quot;&quot; color=&quot;primary&quot; type=&quot;submit&quot; mat-ripple-loader-class-name=&quot;mat-mdc-button-ripple&quot; class=&quot;mdc-button mdc-button--unelevated mat-mdc-unelevated-button mat-primary mat-mdc-button-base&quot;&gt;...&lt;/button&gt; is not clickable at point (1122, 275). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;
   (Session info: chrome=124.0.6367.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b4a4a4ff75db59c12aeb1cc8610e531f, findElement {using=xpath, value=//button[text()=&apos;Ok&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58043}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58043/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b4a4a4ff75db59c12aeb1cc8610e531f
+Command: [ddb52830f56eb84f5072e40802d9dc9a, clickElement {id=f.2E709D54AF240DEEB5BD092C7FC48E70.d.795048439A692CDB3FB38BFD62DDFDF1.e.292}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61729}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61729/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ddb52830f56eb84f5072e40802d9dc9a)] -&gt; xpath: //*[text()=&apos;GO&apos;]//parent::button]
+Session ID: ddb52830f56eb84f5072e40802d9dc9a
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -131,88 +128,58 @@ Session ID: b4a4a4ff75db59c12aeb1cc8610e531f
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy34.click(Unknown Source)
-	at com.responsiveed.pages.CommonElements.clickOnConfirmationbutton(CommonElements.java:62)
-	at com.responsiveed.stepdefination.CommonSetpdef.clickOnOK(CommonSetpdef.java:25)
-	at ✽.Click On OK(file:///E:/ResponcesiveED_Space/AutomationResponsiveED07/src/test/resources/features/Institute.feature:28)
+	at com.responsiveed.pages.CommonElements.clickGobutton(CommonElements.java:67)
+	at com.responsiveed.stepdefination.CommonSetpdef.click_on_GO_button(CommonSetpdef.java:52)
+	at ✽.Click on GO button(file:///E:/ResponcesiveED_Space/AutomationResponsiveED07/src/test/resources/features/Institute.feature:53)
 </pre></div></td>
-<td>22</td>
+<td>15</td>
 <td>com.cucumber.TestRunner.InsistuteRunner@7a6d7e92</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='com.cucumber.TestRunner.InsistuteRunner.runScenario()'><b>runScenario</b><br>Test class: com.cucumber.TestRunner.InsistuteRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Filter Criteria in Institutions", "Administrator - Institutions Management."<br/>
-<a href="#Output-80504258" onClick='toggleBox("Output-80504258", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1454942961" onClick='toggleBox("Output-1454942961", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-80504258" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-80504258">
+<a href="#Output-1454942961" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1454942961">
 About to begin executing following method : AbstractTestNGCucumberTests.runScenario<br/>
 Completed executing following method : AbstractTestNGCucumberTests.runScenario<br/>
+Test Method resides in com.cucumber.TestRunner.InsistuteRunner<br/>
+Test Method had the following parameters : null"Verify the Filter Criteria in Institutions","Administrator - Institutions Management.",<br/>
+Test Status: Pass<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@formcontrolname=&apos;name&apos;]&quot;}
-  (Session info: chrome=124.0.6367.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b4a4a4ff75db59c12aeb1cc8610e531f, findElement {using=xpath, value=//input[@formcontrolname=&apos;name&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58043}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58043/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b4a4a4ff75db59c12aeb1cc8610e531f
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy34.clear(Unknown Source)
-	at com.responsiveed.pages.InsistitutePage.setName(InsistitutePage.java:52)
-	at com.responsiveed.stepdefination.InstituteStepdef.user_enter_and_select_the(InstituteStepdef.java:30)
-	at ✽.user enter and select the &quot;Product&quot; &quot;Name&quot; &quot;Status&quot;(file:///E:/ResponcesiveED_Space/AutomationResponsiveED07/src/test/resources/features/Institute.feature:9)
-... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace80504258", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace80504258'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@formcontrolname=&apos;name&apos;]&quot;}
-  (Session info: chrome=124.0.6367.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b4a4a4ff75db59c12aeb1cc8610e531f, findElement {using=xpath, value=//input[@formcontrolname=&apos;name&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58043}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58043/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b4a4a4ff75db59c12aeb1cc8610e531f
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy34.clear(Unknown Source)
-	at com.responsiveed.pages.InsistitutePage.setName(InsistitutePage.java:52)
-	at com.responsiveed.stepdefination.InstituteStepdef.user_enter_and_select_the(InstituteStepdef.java:30)
-	at ✽.user enter and select the &quot;Product&quot; &quot;Name&quot; &quot;Status&quot;(file:///E:/ResponcesiveED_Space/AutomationResponsiveED07/src/test/resources/features/Institute.feature:9)
-</pre></div></td>
-<td>24</td>
+<td></td>
+<td>16</td>
+<td>com.cucumber.TestRunner.InsistuteRunner@7a6d7e92</td></tr>
+<tr>
+<td title='com.cucumber.TestRunner.InsistuteRunner.runScenario()'><b>runScenario</b><br>Test class: com.cucumber.TestRunner.InsistuteRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the insistute as InActive", "Administrator - Institutions Management."<br/>
+<a href="#Output-974559308" onClick='toggleBox("Output-974559308", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-974559308" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-974559308">
+About to begin executing following method : AbstractTestNGCucumberTests.runScenario<br/>
+Completed executing following method : AbstractTestNGCucumberTests.runScenario<br/>
+Test Method resides in com.cucumber.TestRunner.InsistuteRunner<br/>
+Test Method had the following parameters : null"Validate the insistute as InActive","Administrator - Institutions Management.",<br/>
+Test Status: Pass<br/>
+</div>
+</td>
+<td></td>
+<td>45</td>
 <td>com.cucumber.TestRunner.InsistuteRunner@7a6d7e92</td></tr>
 </table><p>
 </body>

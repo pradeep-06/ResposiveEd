@@ -19,9 +19,9 @@ import modules.CommonBean;
 import modules.ExcelWrite;
 
 @CucumberOptions(features = { "src/test/resources/features/Institute.feature" },
-//					 tags = "@InsistuteMarkInActive",
+					 tags = "@CreateSchoolYear",
 					 glue = { "com.responsiveed.stepdefination" }, 
-					 plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", }, 
+					 plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", }, 
 					 //"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 					 monochrome = true, 
 					 dryRun = false

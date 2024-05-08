@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class CommonMethods {
 	WebDriver driver;
@@ -32,6 +33,7 @@ public class CommonMethods {
 			
 		}
 	public void JavascriptScrollIntoView(WebElement element) {
+		
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
@@ -39,6 +41,11 @@ public class CommonMethods {
 	public void JavascriptClick(WebElement element) {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("arguments[0].click();", element);
+	}
+	
+	public void scrollToBottom(WebElement elementm) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		jsExecutor.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 	}
 	
 }

@@ -96,10 +96,10 @@ public class InsistitutePage {
 			
 		}
 	public void inisitutetable(String Name, String Status, String System, String isConsortium, String action) {
-		if(Name==null)Name="";	
-		if(Status ==null) Status="";		
-		if(System==null)System="";
-		if(isConsortium==null)isConsortium="";
+		if(Name==null||Name=="null")Name="";	
+		if(Status ==null||Status =="null") Status="";		
+		if(System==null||System=="null")System="";
+		if(isConsortium==null||System=="null")isConsortium="";
 		
 		ArrayList<String> array= new ArrayList<String>();
 		Collections.addAll(array, Name,Status,System,isConsortium,"search","");	
@@ -139,10 +139,26 @@ public class InsistitutePage {
 						   bool=true;
 						   break;
 					   }
+					   if(count==array.size()&&action.equalsIgnoreCase("SearchIcon")) {
+						   actions.scrollToElement(row);
+						   WebElement element=null;
+						   element=row.findElement(By.xpath("child::td[5]/button"));
+						   objCommonMethods.JavascriptClick(element);
+//						   row.findElement(By.xpath("child::td[6]/button")).click();
+						   CommonBean.policyLevelPassedCntr++;
+						   bool=true;
+						   break;
+					   }
 				  }
 			  }
 			
-			  if(bool==true) {break;}
+			  if(bool==true) {
+				  
+				 break;
+				 
+			  }else {
+				  
+			  }
 		  }
 			
 		} catch (Exception e) {
