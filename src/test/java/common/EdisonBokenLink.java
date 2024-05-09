@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.List;
 
 import org.apache.poi.ss.usermodel.BorderStyle;
 import org.apache.poi.ss.usermodel.Cell;
@@ -18,6 +21,7 @@ import org.apache.poi.xssf.usermodel.XSSFColor;
 import org.apache.poi.xssf.usermodel.XSSFFont;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebElement;
 
 import modules.PropertyManager;
 
@@ -114,6 +118,27 @@ public class EdisonBokenLink {
 		
 		
 	  } catch (Exception e) {
+		e.printStackTrace();
+	 }
+		
+	}
+	
+	public void findBrokenLinks(List<WebElement> elements) {
+	 try {
+		for(WebElement element:elements) {
+			String url=element.getAttribute("href").trim();
+			URL link = new URL(url);
+			HttpURLConnection httpURLConnection = (HttpURLConnection) link.openConnection();
+			httpURLConnection.setConnectTimeout(3000);
+			httpURLConnection.connect();
+
+			if (httpURLConnection.getResponseCode() == 200) {
+			System.out.println(url + " - " + httpURLConnection.getResponseMessage());
+			} else {
+			System.out.println(url + " - " + httpURLConnection.getResponseMessage() + " - " + "is a broken link");
+			}
+		}
+	 } catch (Exception e) {
 		e.printStackTrace();
 	 }
 		

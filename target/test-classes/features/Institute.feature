@@ -8,11 +8,9 @@ Feature: Administrator - Institutions Management.
     When user enter and select the "Product" "Name" "Status"
     Then Click on GO button
     Then Verify the filter record in institutions table "Name" "Active" "System" "IsConsortium" "Action"
-
     Examples: 
       | TC_ID     	   | FileName                | Sheetname  |
       | TC_ADMS_UM_001 | ResponcesiveEdQA.xlsx	 | Institution |
-   
    
    
   @Test:Insistute002 @TestName:InsistuteMarkInActive @InsistuteMarkInActive
@@ -38,7 +36,6 @@ Feature: Administrator - Institutions Management.
     And Click on Yes in the confirmation pop-up
     And Click On OK
 #    Then Store all results UI "TestCaseName"
-
     Examples: 
       | TC_ID     	   | FileName              | Sheetname   |
       | TC_ADMS_UM_002 | ResponcesiveEdQA.xlsx | Institution |

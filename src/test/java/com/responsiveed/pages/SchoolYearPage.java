@@ -42,8 +42,14 @@ public class SchoolYearPage {
 		
 	}
 	public void clickOnCreate() {
-		createElement.click();
-		CommonBean.policyLevelPassedCntr++;
+	  try {
+		  Thread.sleep(2000);
+			createElement.click();
+			CommonBean.policyLevelPassedCntr++;
+	  } catch (Exception e) {
+		e.printStackTrace();
+	}
+		
 	}
 	
 	public void createSchoolYear(String gobalSY,String schoolname,String startdate,String enddate) {
