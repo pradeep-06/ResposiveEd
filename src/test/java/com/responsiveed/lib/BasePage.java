@@ -4,7 +4,7 @@ package com.responsiveed.lib;
 import com.responsiveed.pages.CommonElements;
 import com.responsiveed.pages.InsistitutePage;
 import com.responsiveed.pages.LoginPage;
-
+import com.responsiveed.pages.SchoolYearPage;
 
 import modules.BaseClass;
 
@@ -15,6 +15,7 @@ public class BasePage extends BaseClass{
 	public static LoginPage objLoginpage=null;
 	public static InsistitutePage objInsistitutePage=null;
 	public static CommonElements objCommonElements=null;
+	public static SchoolYearPage objSchoolYearPage=null;
 	
 	
 
@@ -22,6 +23,7 @@ public class BasePage extends BaseClass{
 		objLoginpage = new LoginPage(driver);
 		objCommonElements= new CommonElements(driver);
 		objInsistitutePage = new InsistitutePage(driver);
+		objSchoolYearPage=new SchoolYearPage(driver);
 	}
 	
 	public static void destroyPageObjects() {

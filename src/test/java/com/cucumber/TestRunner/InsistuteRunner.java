@@ -18,7 +18,7 @@ import io.cucumber.testng.CucumberOptions;
 import modules.CommonBean;
 import modules.ExcelWrite;
 
-@CucumberOptions(features = { "src/test/resources/features/Institute.feature" },
+@CucumberOptions(features = { "src/test/resources/features/Institute.feature"},
 					 tags = "@CreateSchoolYear",
 					 glue = { "com.responsiveed.stepdefination" }, 
 					 plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", }, 

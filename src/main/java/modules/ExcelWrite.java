@@ -290,16 +290,14 @@ public class ExcelWrite {
 			CellStyle.setBorderRight(BorderStyle.THICK);
 			CellStyle.setBorderLeft(BorderStyle.THICK);
 			font.setFontName("Calibri");
-		
 			font.setBold(true);
-
 			// font.setFontHeightInPoints((short) 11);
 			font.setColor(new XSSFColor(new java.awt.Color(255, 255, 255), new DefaultIndexedColorMap()));
 			font.setFontHeightInPoints((short) 11);
 			CellStyle.setFont(font);
+			
 			XSSFCellStyle CellStyle1 = workbook.createCellStyle();
 			XSSFFont font1 = workbook.createFont();
-
 			// normal
 			CellStyle1.setVerticalAlignment(VerticalAlignment.CENTER);
 			CellStyle1.setBorderBottom(BorderStyle.THIN);

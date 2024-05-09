@@ -35,7 +35,6 @@ public class InstituteStepdef extends BasePage{
 	@Then("Verify the filter record in institutions table {string} {string} {string} {string} {string}")
 	public void verify_the_filter_record_in_institutions_table(String Name, String Status, String System, String isConsortium, String action) throws Throwable {
 	
-		
 		objInsistitutePage.inisitutetable(CommonBean.data.get(Name), CommonBean.data.get(Status), CommonBean.data.get(System), CommonBean.data.get(isConsortium), CommonBean.data.get(action));
 	}
 
@@ -65,6 +64,24 @@ public class InstituteStepdef extends BasePage{
 		objCommonElements.clickOnMenuItem("Student Application");
 		objInsistitutePage.verifyInActiveUserManagement(CommonBean.data.get(name));
 		
+	}
+	
+	@When("Click on the Add School Year")
+	public void clickAddSchoolYear() {
+		CommonBean.validationpoints++;
+		objSchoolYearPage.clickAddSchoolYear();
+	}
+	
+	@When("Click on the create")
+	public void clickCreate() {
+		CommonBean.validationpoints++;
+		objSchoolYearPage.clickOnCreate();
+	}
+	
+	@When("Enter the details in create school year {string} {string} {string} {string}")
+	public void enterdetailsinCreateschoolyear(String gobalSY,String schoolname,String startdate,String enddate) {
+		CommonBean.validationpoints+=4;
+		objSchoolYearPage.createSchoolYear(CommonBean.data.get(gobalSY), CommonBean.data.get(schoolname), CommonBean.data.get(startdate), CommonBean.data.get(enddate));
 	}
 	
 	

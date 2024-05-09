@@ -25,7 +25,8 @@ public class CommonElements {
 	@FindBy(how = How.XPATH,using = "//button[text()='Yes']")private WebElement yesElement;
 	@FindBy(how = How.XPATH,using = "(//button[text()='No'])[2]")private WebElement noElement;
 	@FindBy(how = How.XPATH,using = "//button[text()='Ok']")private WebElement okElement;
-	
+	@FindBy(how=How.XPATH,using = "")private WebElement creatElement;
+	@FindBy(how=How.XPATH,using = "")private WebElement cancelElement;
 	public CommonElements(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);

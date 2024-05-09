@@ -10,10 +10,12 @@ com\responsiveed\stepdefination\InstituteStepdef.class
 com\responsiveed\stepdefination\Credentials.class
 com\responsiveed\stepdefination\CommonSetpdef.class
 com\responsiveed\stepdefination\LoginSteps.class
+common\EdisonBokenLink.class
 com\cucumber\TestRunner\InsistuteRunner.class
 common\Main.class
 com\responsiveed\lib\UserManagementLib.class
 com\responsiveed\stepdefination\UserManagementDropDwnHandStepDef.class
+com\responsiveed\pages\SchoolYearPage.class
 com\responsiveed\lib\Email.class
 com\responsiveed\pages\UserManagement.class
 com\responsiveed\stepdefination\searchUserStepDef.class

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="3" failed="0" skipped="0">
+<testng-results total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[About to begin executing Suite ResponsiveED_LMS-SIS enviroment]]>
@@ -26,45 +26,6 @@
       <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.runScenario]]>
     </line>
     <line>
-      <![CDATA[Test Method resides in com.cucumber.TestRunner.InsistuteRunner]]>
-    </line>
-    <line>
-      <![CDATA[Test Method had the following parameters : null"Verify the Filter Criteria in Institutions","Administrator - Institutions Management.",]]>
-    </line>
-    <line>
-      <![CDATA[Test Status: Pass]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing following method : AbstractTestNGCucumberTests.runScenario]]>
-    </line>
-    <line>
-      <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.runScenario]]>
-    </line>
-    <line>
-      <![CDATA[Test Method resides in com.cucumber.TestRunner.InsistuteRunner]]>
-    </line>
-    <line>
-      <![CDATA[Test Method had the following parameters : null"Validate the insistute as InActive","Administrator - Institutions Management.",]]>
-    </line>
-    <line>
-      <![CDATA[Test Status: Pass]]>
-    </line>
-    <line>
-      <![CDATA[About to begin executing following method : AbstractTestNGCucumberTests.runScenario]]>
-    </line>
-    <line>
-      <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.runScenario]]>
-    </line>
-    <line>
-      <![CDATA[Test Method resides in com.cucumber.TestRunner.InsistuteRunner]]>
-    </line>
-    <line>
-      <![CDATA[Test Method had the following parameters : null"Validate the insistute as InActive","Administrator - Institutions Management.",]]>
-    </line>
-    <line>
-      <![CDATA[Test Status: Pass]]>
-    </line>
-    <line>
       <![CDATA[About to begin executing following method : InsistuteRunner.testDownClass]]>
     </line>
     <line>
@@ -77,19 +38,19 @@
       <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.tearDownClass]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-05-07T06:35:16Z" name="ResponsiveED_LMS-SIS enviroment" finished-at="2024-05-07T06:36:43Z" duration-ms="86553">
+  <suite started-at="2024-05-08T08:22:50Z" name="ResponsiveED_LMS-SIS enviroment" finished-at="2024-05-08T08:23:27Z" duration-ms="37309">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@793be5ca]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@446293d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-05-07T06:35:16Z" name="Insistute" finished-at="2024-05-07T06:36:43Z" duration-ms="86553">
+    <test started-at="2024-05-08T08:22:50Z" name="Insistute" finished-at="2024-05-08T08:23:27Z" duration-ms="37309">
       <class name="com.cucumber.TestRunner.InsistuteRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@793be5ca]" started-at="2024-05-07T12:05:16Z" name="setUpClass" finished-at="2024-05-07T12:05:17Z" duration-ms="698" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@446293d]" started-at="2024-05-08T13:52:50Z" name="setUpClass" finished-at="2024-05-08T13:52:50Z" duration-ms="696" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2569afda]]>
+                <![CDATA[org.testng.TestRunner@6cd7dc74]]>
               </value>
             </param>
           </params>
@@ -99,7 +60,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="beforeclass(java.lang.String, java.lang.String)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@793be5ca]" started-at="2024-05-07T12:05:17Z" name="beforeclass" finished-at="2024-05-07T12:05:22Z" duration-ms="4668" status="PASS">
+        <test-method is-config="true" signature="beforeclass(java.lang.String, java.lang.String)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@446293d]" started-at="2024-05-08T13:52:50Z" name="beforeclass" finished-at="2024-05-08T13:53:00Z" duration-ms="9650" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -118,35 +79,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeclass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@793be5ca]" started-at="2024-05-07T12:05:22Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T12:05:37Z" duration-ms="15625" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Filter Criteria in Institutions"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Administrator - Institutions Management."]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.runScenario]]>
-            </line>
-            <line>
-              <![CDATA[Test Method resides in com.cucumber.TestRunner.InsistuteRunner]]>
-            </line>
-            <line>
-              <![CDATA[Test Method had the following parameters : null"Verify the Filter Criteria in Institutions","Administrator - Institutions Management.",]]>
-            </line>
-            <line>
-              <![CDATA[Test Status: Pass]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@793be5ca]" started-at="2024-05-07T12:05:37Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T12:06:23Z" duration-ms="46125" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@446293d]" started-at="2024-05-08T13:53:00Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-08T13:53:24Z" duration-ms="23597" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -159,57 +92,66 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@formcontrolname='name']"}
+  (Session info: chrome=124.0.6367.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0ae00ea3131598c7f9b66bed60280b51, findElement {using=xpath, value=//input[@formcontrolname='name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61437}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61437/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ae00ea3131598c7f9b66bed60280b51]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@formcontrolname='name']"}
+  (Session info: chrome=124.0.6367.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0ae00ea3131598c7f9b66bed60280b51, findElement {using=xpath, value=//input[@formcontrolname='name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.155 (df4f029328b..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61437}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61437/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ae00ea3131598c7f9b66bed60280b51
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy31.clear(Unknown Source)
+	at com.responsiveed.pages.InsistitutePage.setName(InsistitutePage.java:52)
+	at com.responsiveed.stepdefination.InstituteStepdef.user_enter_and_select_the(InstituteStepdef.java:30)
+	at ✽.user enter and select the "Product" "Name" "Status"(file:///E:/ResponcesiveED_Space/AutomationResponsiveED07/src/test/resources/features/Institute.feature:51)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.runScenario]]>
             </line>
-            <line>
-              <![CDATA[Test Method resides in com.cucumber.TestRunner.InsistuteRunner]]>
-            </line>
-            <line>
-              <![CDATA[Test Method had the following parameters : null"Validate the insistute as InActive","Administrator - Institutions Management.",]]>
-            </line>
-            <line>
-              <![CDATA[Test Status: Pass]]>
-            </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@793be5ca]" started-at="2024-05-07T12:06:23Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-07T12:06:40Z" duration-ms="16616" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate the insistute as InActive"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Administrator - Institutions Management."]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.runScenario]]>
-            </line>
-            <line>
-              <![CDATA[Test Method resides in com.cucumber.TestRunner.InsistuteRunner]]>
-            </line>
-            <line>
-              <![CDATA[Test Method had the following parameters : null"Validate the insistute as InActive","Administrator - Institutions Management.",]]>
-            </line>
-            <line>
-              <![CDATA[Test Status: Pass]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="testDownClass()[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@793be5ca]" started-at="2024-05-07T12:06:40Z" name="testDownClass" finished-at="2024-05-07T12:06:41Z" duration-ms="870" status="PASS">
+        <test-method is-config="true" signature="testDownClass()[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@446293d]" started-at="2024-05-08T13:53:24Z" name="testDownClass" finished-at="2024-05-08T13:53:25Z" duration-ms="855" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : InsistuteRunner.testDownClass]]>
             </line>
           </reporter-output>
         </test-method> <!-- testDownClass -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@793be5ca]" started-at="2024-05-07T12:06:41Z" name="tearDownClass" finished-at="2024-05-07T12:06:43Z" duration-ms="1934" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.cucumber.TestRunner.InsistuteRunner@446293d]" started-at="2024-05-08T13:53:25Z" name="tearDownClass" finished-at="2024-05-08T13:53:27Z" duration-ms="2480" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Completed executing following method : AbstractTestNGCucumberTests.tearDownClass]]>

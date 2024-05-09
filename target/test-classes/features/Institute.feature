@@ -51,6 +51,9 @@ Feature: Administrator - Institutions Management.
     When user enter and select the "Product" "Name" "Status"
     Then Click on GO button
     And Verify the filter record in institutions table "Name" "Active" "System" "IsConsortium" "Action"
-  Examples: 
+    When Click on the Add School Year
+    And Click on the create
+    When Enter the details in create school year "GlobalSchoolYear" "SchoolYearName" "StartDate" "EndDate"
+   Examples: 
       | TC_ID     	   | FileName              | Sheetname   |
       | TC_ADMS_SY_001 | ResponcesiveEdQA.xlsx | SchoolYear  |

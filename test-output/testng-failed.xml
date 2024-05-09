@@ -13,7 +13,7 @@
           <include name="setUpClass"/>
           <include name="testDownClass"/>
           <include name="beforeclass"/>
-          <include name="runScenario" invocation-numbers="2"/>
+          <include name="runScenario" invocation-numbers="0"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.cucumber.TestRunner.InsistuteRunner -->
