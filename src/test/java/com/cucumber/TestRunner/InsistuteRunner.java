@@ -11,16 +11,16 @@ import org.testng.annotations.Parameters;
 import com.cucumber.managers.EmailGenerator;
 import com.cucumber.managers.RepoterClass;
 import com.cucumber.utility.Log;
-import com.responsiveed.lib.BasePage;
+import com.edison.lib.BasePage;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import modules.CommonBean;
 import modules.ExcelWrite;
 
-@CucumberOptions(features = { "src/test/resources/features/Institute.feature"},
-					 tags = "@CreateSchoolYear",
-					 glue = { "com.responsiveed.stepdefination" }, 
+@CucumberOptions(features = { "src/test/resources/features/EdsionBrokenLink.feature"},
+//					 tags = "@CreateSchoolYear",
+					 glue = { "com.edison.stepdef" }, 
 					 plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", }, 
 					 //"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 					 monochrome = true, 
@@ -35,7 +35,6 @@ public class InsistuteRunner extends AbstractTestNGCucumberTests {
 		public void beforeclass(String browser,String appname) {
 
 			testcasename = this.getClass().getSimpleName();
-
 			System.out.println("***************** " + testcasename + " Test satrting *****************");
 			DOMConfigurator.configure("log4j.xml");
 			CommonBean.Appname=appname;

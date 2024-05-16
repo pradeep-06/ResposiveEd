@@ -6,14 +6,14 @@
   </listeners>
   <test thread-count="5" name="Insistute(failed)">
     <parameter name="browser" value="chrome"/>
-    <parameter name="common.appname" value="ResponsiveED"/>
+    <parameter name="common.appname" value="EdisonReport"/>
     <classes>
       <class name="com.cucumber.TestRunner.InsistuteRunner">
         <methods>
           <include name="setUpClass"/>
           <include name="testDownClass"/>
           <include name="beforeclass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="runScenario" invocation-numbers="1"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.cucumber.TestRunner.InsistuteRunner -->

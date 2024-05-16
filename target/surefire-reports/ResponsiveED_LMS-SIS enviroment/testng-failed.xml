@@ -13,4 +13,19 @@
       <class name="com.cucumber.TestRunner.InsistuteRunner"/>
     </classes>
   </test> <!-- Insistute -->
+  <test name="Insistute(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="common.appname" value="ResponsiveED"/>
+    <classes>
+      <class name="com.cucumber.TestRunner.InsistuteRunner">
+        <methods>
+          <include name="testDownClass"/>
+          <include name="runScenario" invocation-numbers="1 2"/>
+          <include name="tearDownClass"/>
+          <include name="beforeclass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- com.cucumber.TestRunner.InsistuteRunner -->
+    </classes>
+  </test> <!-- Insistute(failed) -->
 </suite> <!-- Failed suite [ResponsiveED_LMS-SIS enviroment] -->

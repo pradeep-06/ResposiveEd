@@ -7,15 +7,34 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 public class CommonMethods {
 	WebDriver driver;
+	Actions actions;
 	
 	public CommonMethods(WebDriver driver) {
 		this.driver=driver;
+		actions=new Actions(this.driver);
 	}
-	public void matSelectdropdown(WebElement element,String visibleText) {
+	
+public void selectExpandDropdown(WebElement select,String visibleText) {
+		try {
+			List<WebElement> options=select.findElements(By.xpath("child::option"));
+			for(WebElement option:options) {
+				String value=option.getText().trim();
+				if(visibleText.contains(value)) {
+					actions.scrollToElement(option);
+					actions.moveToElement(option).click().build().perform();
+					break;
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}	
+}
+public void matSelectdropdown(WebElement element,String visibleText) {
 		try {
 				element.click();
 				List<WebElement> options =element.findElements(By.xpath("following::div[@role='listbox']//mat-option"));

@@ -56,7 +56,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>May 9, 2024 02:53:17 PM</span>
+			<span class='label blue darken-3 suite-start-time'>May 16, 2024 02:52:56 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -83,9 +83,9 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@TestName:InsistuteCreateSchoolYear</a></li>
-					<li><a href='#'>@CreateSchoolYear</a></li>
-					<li><a href='#'>@Test:Insistute003</a></li>
+					<li><a href='#'>@CourseManagementFilter</a></li>
+					<li><a href='#'>@TestName:CourseManagementFilter</a></li>
+					<li><a href='#'>@Test:CourseManagement001</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -146,7 +146,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>1</span> scenarios passed</span>
+                    <span class='strong'>2</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -166,7 +166,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>9</span> steps passed</span>
+                    <span class='strong'>20</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -195,8 +195,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Administrator - Institutions Management.</span>
-						<span class='test-time'>May 9, 2024 02:53:23 PM</span>
+						<span class='test-name'>Administrator - Course Management.</span>
+						<span class='test-time'>May 16, 2024 02:53:05 PM</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -209,59 +209,115 @@
 
 <div class='scenario outline node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 23.358</span>
+	<span class='duration right label'>00 22 53.915</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Validate the insistute as InActive</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Verify the Filter Criteria in Course Template</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>TC_ID</td><td>FileName</td><td>Sheetname</td></tr><tr><td>TC_ADMS_SY_001</td><td>ResponcesiveEdQA.xlsx</td><td>SchoolYear</td></tr></table></div>
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>COURSE_ID</td><td>FileName</td><td>Sheetname</td><td>FileName2</td><td>FilePath</td></tr><tr><td>COURSE_CODE_003</td><td>EdisonLearning.xlsx</td><td>ELCourseTemplate</td><td>EdsionBrokenLink_AdvMath</td><td>src\test\resources\Edison</td></tr><tr><td>COURSE_CODE_002</td><td>EdisonLearning.xlsx</td><td>ELCourseTemplate</td><td>EdsionBrokenLink_EDMP</td><td>src\test\resources\Edison</td></tr></table></div>
 	
 	
 	<ul class='steps'>
 		<li test-id='3' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Validate the insistute as InActive</div>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Verify the Filter Criteria in Course Template</div>
 
 				<div class='category-list'>
-						<span class='category label'>@TestName:InsistuteCreateSchoolYear</span>
-						<span class='category label'>@CreateSchoolYear</span>
-						<span class='category label'>@Test:Insistute003</span>
+						<span class='category label'>@TestName:CourseManagementFilter</span>
+						<span class='category label'>@Test:CourseManagement001</span>
+						<span class='category label'>@CourseManagementFilter</span>
 				</div>
 
 			<ul class='gc steps'>
 				<li test-id='4' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="com.responsiveed.stepdefination.CommonSetpdef.readData(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Read the testdata "TC_ADMS_SY_001" "ResponcesiveEdQA.xlsx" "SchoolYear"</h6>
+					<h6 class="step-name" title="com.edison.stepdef.CommonSetpdef.readData(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Read the testdata "COURSE_CODE_003" "EdisonLearning.xlsx" "ELCourseTemplate"</h6>
 
 				</li>
 				<li test-id='6' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="com.responsiveed.stepdefination.CommonSetpdef.the_user_logs_in_with_valid_credentials()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user logs in with valid credentials</h6>
+					<h6 class="step-name" title="com.edison.stepdef.CommonSetpdef.the_user_logs_in_with_valid_credentials()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user logs in with valid credentials</h6>
 
 				</li>
 				<li test-id='8' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.responsiveed.stepdefination.InstituteStepdef.the_user_navigates_to_the_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user navigates to the "Screen" screen</h6>
+					<h6 class="step-name" title="com.edison.stepdef.CommonSetpdef.clickOnControlPanel()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Click on Control Panel</h6>
 
 				</li>
-				<li test-id='10' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.responsiveed.stepdefination.InstituteStepdef.user_enter_and_select_the(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user enter and select the "Product" "Name" "Status"</h6>
+				<li test-id='10' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.edison.stepdef.CommonSetpdef.selectOptionInControlPanel(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then select the "Option" in the control panel</h6>
 
 				</li>
-				<li test-id='12' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.responsiveed.stepdefination.CommonSetpdef.click_on_GO_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Click on GO button</h6>
+				<li test-id='12' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.edison.stepdef.EdsionBrokenStepdef.select_the_dropdown_values(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When select and enter the dropdown values "Institution" "SearchBy" "Name" "ActiveInactive" in course template</h6>
 
 				</li>
-				<li test-id='14' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.responsiveed.stepdefination.InstituteStepdef.verify_the_filter_record_in_institutions_table(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify the filter record in institutions table "Name" "Active" "System" "IsConsortium" "Action"</h6>
+				<li test-id='14' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.edison.stepdef.CommonSetpdef.click_on_GO_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Click on GO button</h6>
 
 				</li>
-				<li test-id='16' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.responsiveed.stepdefination.InstituteStepdef.clickAddSchoolYear()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Click on the Add School Year</h6>
+				<li test-id='16' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.edison.stepdef.EdsionBrokenStepdef.verify_the_filter_record_in_course_template_table(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Verify the record in course template table "Code" "Name" "Abbreviation" "ActiveInactive" and click on name</h6>
 
 				</li>
 				<li test-id='18' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.responsiveed.stepdefination.InstituteStepdef.clickCreate()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click on the create</h6>
+					<h6 class="step-name" title="com.edison.stepdef.EdsionBrokenStepdef.changeDriverFocus()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Change the driver Focus to new window</h6>
 
 				</li>
-				<li test-id='20' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.responsiveed.stepdefination.InstituteStepdef.enterdetailsinCreateschoolyear(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Enter the details in create school year "GlobalSchoolYear" "SchoolYearName" "StartDate" "EndDate"</h6>
+				<li test-id='20' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.edison.stepdef.EdsionBrokenStepdef.verifyBrokenLinks(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then verify the broken links in each page "Name" "Code"</h6>
+
+				</li>
+				<li test-id='22' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.edison.stepdef.EdsionBrokenStepdef.writeBrokenToExcel(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Write the broken links in excel file "EdsionBrokenLink_AdvMath" "src\test\resources\Edison"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='25' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Verify the Filter Criteria in Course Template</div>
+
+				<div class='category-list'>
+						<span class='category label'>@TestName:CourseManagementFilter</span>
+						<span class='category label'>@Test:CourseManagement001</span>
+						<span class='category label'>@CourseManagementFilter</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='26' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.edison.stepdef.CommonSetpdef.readData(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Read the testdata "COURSE_CODE_002" "EdisonLearning.xlsx" "ELCourseTemplate"</h6>
+
+				</li>
+				<li test-id='28' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.edison.stepdef.CommonSetpdef.the_user_logs_in_with_valid_credentials()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user logs in with valid credentials</h6>
+
+				</li>
+				<li test-id='30' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.edison.stepdef.CommonSetpdef.clickOnControlPanel()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Click on Control Panel</h6>
+
+				</li>
+				<li test-id='32' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.edison.stepdef.CommonSetpdef.selectOptionInControlPanel(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then select the "Option" in the control panel</h6>
+
+				</li>
+				<li test-id='34' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.edison.stepdef.EdsionBrokenStepdef.select_the_dropdown_values(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When select and enter the dropdown values "Institution" "SearchBy" "Name" "ActiveInactive" in course template</h6>
+
+				</li>
+				<li test-id='36' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.edison.stepdef.CommonSetpdef.click_on_GO_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Click on GO button</h6>
+
+				</li>
+				<li test-id='38' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.edison.stepdef.EdsionBrokenStepdef.verify_the_filter_record_in_course_template_table(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Verify the record in course template table "Code" "Name" "Abbreviation" "ActiveInactive" and click on name</h6>
+
+				</li>
+				<li test-id='40' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.edison.stepdef.EdsionBrokenStepdef.changeDriverFocus()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Change the driver Focus to new window</h6>
+
+				</li>
+				<li test-id='42' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.edison.stepdef.EdsionBrokenStepdef.verifyBrokenLinks(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then verify the broken links in each page "Name" "Code"</h6>
+
+				</li>
+				<li test-id='44' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.edison.stepdef.EdsionBrokenStepdef.writeBrokenToExcel(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Write the broken links in excel file "EdsionBrokenLink_EDMP" "src\test\resources\Edison"</h6>
 
 				</li>
 			</ul>
@@ -312,14 +368,14 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@TestName:InsistuteCreateSchoolYear</span>
+						<span class='category-name'>@CourseManagementFilter</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label pass'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
 							
 							
 						</div>
@@ -334,8 +390,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 9, 2024 02:53:23 PM</td>
-										<td class='linked' test-id='3'>Validate the insistute as InActive</td>
+										<td>May 16, 2024 02:53:05 PM</td>
+										<td class='linked' test-id='3'>Verify the Filter Criteria in Course Template</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 16, 2024 02:54:46 PM</td>
+										<td class='linked' test-id='25'>Verify the Filter Criteria in Course Template</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -345,14 +406,14 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@CreateSchoolYear</span>
+						<span class='category-name'>@TestName:CourseManagementFilter</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label pass'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
 							
 							
 						</div>
@@ -367,8 +428,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 9, 2024 02:53:23 PM</td>
-										<td class='linked' test-id='3'>Validate the insistute as InActive</td>
+										<td>May 16, 2024 02:53:05 PM</td>
+										<td class='linked' test-id='3'>Verify the Filter Criteria in Course Template</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 16, 2024 02:54:46 PM</td>
+										<td class='linked' test-id='25'>Verify the Filter Criteria in Course Template</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -378,14 +444,14 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Test:Insistute003</span>
+						<span class='category-name'>@Test:CourseManagement001</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label pass'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
 							
 							
 						</div>
@@ -400,8 +466,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 9, 2024 02:53:23 PM</td>
-										<td class='linked' test-id='3'>Validate the insistute as InActive</td>
+										<td>May 16, 2024 02:53:05 PM</td>
+										<td class='linked' test-id='3'>Verify the Filter Criteria in Course Template</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 16, 2024 02:54:46 PM</td>
+										<td class='linked' test-id='25'>Verify the Filter Criteria in Course Template</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -432,31 +503,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>9</div>
+					<div class='panel-lead'>20</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 9, 2024 02:53:17 PM</div>
+					<div class='panel-lead'>May 16, 2024 02:52:56 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 9, 2024 02:53:47 PM</div>
+			 		<div class='panel-lead'>May 16, 2024 03:16:07 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 30.890</div>
+					<div class='panel-lead'>00 23 10.870</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -492,8 +563,8 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@TestName:InsistuteCreateSchoolYear</td>
-							<td>1</td>
+							<td>@CourseManagementFilter</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -501,8 +572,8 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@CreateSchoolYear</td>
-							<td>1</td>
+							<td>@TestName:CourseManagementFilter</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -510,8 +581,8 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@Test:Insistute003</td>
-							<td>1</td>
+							<td>@Test:CourseManagement001</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -536,16 +607,16 @@
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 1,
-				passChild: 1,
+				childCount: 2,
+				passChild: 2,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 9,
-				passGrandChild: 9,
+				grandChildCount: 20,
+				passGrandChild: 20,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -557,7 +628,7 @@
 		
 		<script>
 			var timeline = {
-			        "Administrator - Institutions Management.":23.367
+			        "Administrator - Course Management.":1373.919
 			};
 		</script>
 		

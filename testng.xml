@@ -9,7 +9,7 @@
 
 	<test name="Insistute">
 		<parameter name="browser" value="chrome" />
-		<parameter name="common.appname" value="ResponsiveED" />
+		<parameter name="common.appname" value="EdisonReport" />
 		<classes>
 			<class name="com.cucumber.TestRunner.InsistuteRunner" />						
 		</classes>

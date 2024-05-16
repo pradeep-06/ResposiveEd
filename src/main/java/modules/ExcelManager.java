@@ -22,9 +22,9 @@ public class ExcelManager {
 	
 	public ExcelManager(String filename) {		
 		if(prop.getProperty("environment").equalsIgnoreCase("QA")) {			
-			this.filename= System.getProperty("user.dir")+prop.getProperty("qaFilepath")+"\\"+filename;	
+			this.filename= System.getProperty("user.dir")+prop.getProperty("qaFilepath")+"\\"+filename.trim();	
 		}else if (prop.getProperty("environment").equalsIgnoreCase("PROD")) {
-			this.filename= System.getProperty("user.dir")+prop.getProperty("prodFilepath")+"\\"+filename;			
+			this.filename= System.getProperty("user.dir")+prop.getProperty("prodFilepath")+"\\"+filename.trim();			
 		}else {	
 			System.out.println("*******************Mention environment (QA/PROD)****************************");
 			System.exit(0);
@@ -39,13 +39,13 @@ public class ExcelManager {
 			FileInputStream fileInputStream = new FileInputStream(filename);
 			DataFormatter dataformtter = new DataFormatter();
 			Workbook worbook =WorkbookFactory.create(fileInputStream);
-			Sheet  sheet = worbook.getSheet(sheetname);
+			Sheet  sheet = worbook.getSheet(sheetname.trim());
 			int rowcount = (sheet.getLastRowNum()-sheet.getFirstRowNum())+1;
 			int header = sheet.getFirstRowNum();
 			int testcaserow=0;
 			for(int i=0;i<rowcount;i++) {
 				String value= dataformtter.formatCellValue(sheet.getRow(i).getCell(0));
-				if(value.equalsIgnoreCase(TCid)) {
+				if(value.equalsIgnoreCase(TCid.trim())) {
 					testcaserow=i;
 					break;
 				}
