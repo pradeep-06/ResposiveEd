@@ -19,7 +19,7 @@ import modules.CommonBean;
 import modules.ExcelWrite;
 
 @CucumberOptions(features = { "src/test/resources/features/Institute.feature"},
-					 tags = "@CreateSchoolYear",
+//					 tags = "@CreateSchoolYear",
 					 glue = { "com.responsiveed.stepdefination" }, 
 					 plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", }, 
 					 //"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
@@ -35,7 +35,6 @@ public class InsistuteRunner extends AbstractTestNGCucumberTests {
 		public void beforeclass(String browser,String appname) {
 
 			testcasename = this.getClass().getSimpleName();
-
 			System.out.println("***************** " + testcasename + " Test satrting *****************");
 			DOMConfigurator.configure("log4j.xml");
 			CommonBean.Appname=appname;

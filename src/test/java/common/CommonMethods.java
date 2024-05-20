@@ -8,6 +8,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.asserts.SoftAssert;
 
 public class CommonMethods {
 	WebDriver driver;
@@ -17,6 +18,7 @@ public class CommonMethods {
 	}
 	public void matSelectdropdown(WebElement element,String visibleText) {
 		try {
+				Wait.elementToBeClickable(element);
 				element.click();
 				List<WebElement> options =element.findElements(By.xpath("following::div[@role='listbox']//mat-option"));
 				for(WebElement option:options) {
@@ -28,6 +30,8 @@ public class CommonMethods {
 					}		
 				}
 			} catch (Exception e) {
+				SoftAssert soft =new SoftAssert();
+				soft.fail();
 				e.printStackTrace();
 			}
 			

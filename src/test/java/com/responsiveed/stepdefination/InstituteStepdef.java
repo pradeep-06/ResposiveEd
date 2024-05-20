@@ -84,6 +84,10 @@ public class InstituteStepdef extends BasePage{
 		objSchoolYearPage.createSchoolYear(CommonBean.data.get(gobalSY), CommonBean.data.get(schoolname), CommonBean.data.get(startdate), CommonBean.data.get(enddate));
 	}
 	
+	@Then("Verify the add school year record {string} {string} {string} {string} {string}")
+	public void verifySchoolYearRecord(String name, String startdate,String enddate,String extendedate,String action) {
+		objSchoolYearPage.verifycreateSchoolYear(CommonBean.data.get(name), CommonBean.data.get(startdate), CommonBean.data.get(enddate), CommonBean.data.get(extendedate),CommonBean.data.get(action));
+	}
 	
 
 	

@@ -51,6 +51,10 @@ Feature: Administrator - Institutions Management.
     When Click on the Add School Year
     And Click on the create
     When Enter the details in create school year "GlobalSchoolYear" "SchoolYearName" "StartDate" "EndDate"
+    And Click on the create
+    And Click On OK
+    When Click on the Add School Year
+    Then Verify the add school year record "SchoolYearName" "StartDate" "EndDate" "ExtendedDate" "Action2"
    Examples: 
       | TC_ID     	   | FileName              | Sheetname   |
       | TC_ADMS_SY_001 | ResponcesiveEdQA.xlsx | SchoolYear  |

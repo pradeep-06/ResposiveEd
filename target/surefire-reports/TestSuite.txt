@@ -1,4 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.778 s - in TestSuite
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 81.077 s <<< FAILURE! - in TestSuite
+runScenario(com.cucumber.TestRunner.InsistuteRunner)  Time elapsed: 41.104 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button type="button" class="swal2-confirm swal2-styled" aria-label="" style="display: inline-block;">...</button> is not clickable at point (681, 361). Other element would receive the click: <div class="swal2-actions" style="display: flex;">...</div>
+  (Session info: chrome=124.0.6367.119)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [782ec5c14916c3a33f06cf950d77f4d2, clickElement {id=f.53E485F175CDF790C6FA835A46280E7A.d.87A9430163DA78EB311FB43CE3D28791.e.301}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56066}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56066/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (782ec5c14916c3a33f06cf950d77f4d2)] -> xpath: //button[text()='Ok']]
+Session ID: 782ec5c14916c3a33f06cf950d77f4d2
+
+runScenario(com.cucumber.TestRunner.InsistuteRunner)  Time elapsed: 16.187 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button _ngcontent-ng-c1168238639="" mat-flat-button="" color="primary" type="submit" mat-ripple-loader-class-name="mat-mdc-button-ripple" class="mdc-button mdc-button--unelevated mat-mdc-unelevated-button mat-primary mat-mdc-button-base">...</button> is not clickable at point (1122, 275). Other element would receive the click: <div class="swal2-container swal2-center swal2-backdrop-show" style="overflow-y: auto;">...</div>
+  (Session info: chrome=124.0.6367.119)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [782ec5c14916c3a33f06cf950d77f4d2, clickElement {id=f.53E485F175CDF790C6FA835A46280E7A.d.87A9430163DA78EB311FB43CE3D28791.e.283}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56066}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56066/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (782ec5c14916c3a33f06cf950d77f4d2)] -> xpath: //*[text()='GO']//parent::button]
+Session ID: 782ec5c14916c3a33f06cf950d77f4d2
+

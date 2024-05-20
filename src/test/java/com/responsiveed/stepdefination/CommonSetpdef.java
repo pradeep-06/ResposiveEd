@@ -29,8 +29,6 @@ public class CommonSetpdef extends BasePage{
 		objCommonElements.clickOnConfirmationbutton("No");
 	}
 	
-	
-	
 	@Given("Read the testdata {string} {string} {string}")
 	public void readData(String tc_id,String filename, String sheetname) {
 		CommonBean.validationpoints=0;
@@ -49,7 +47,8 @@ public class CommonSetpdef extends BasePage{
 
 	@Then("Click on GO button")
 	public void click_on_GO_button() throws Throwable {
-	  objCommonElements.clickGobutton();
+	 CommonBean.validationpoints++;
+	 objCommonElements.clickGobutton();
 	}
 	
 
@@ -86,8 +85,7 @@ public class CommonSetpdef extends BasePage{
             final byte[] screenshot = ((TakesScreenshot) BaseClass.driver).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png", scenario.getLine().toString()); 
         }   
-     
-     
+
     }
 	
 	@After

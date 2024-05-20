@@ -13,6 +13,7 @@ import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import common.Wait;
 import modules.CommonBean;
 
 public class CommonElements {
@@ -41,6 +42,7 @@ public class CommonElements {
 				if(actualScreen.equalsIgnoreCase(screen)) {
 					JavascriptExecutor js = (JavascriptExecutor) driver;
 					js.executeScript("arguments[0].scrollIntoView(true);", element);
+					Wait.elementToBeClickable(element);
 					element.click();
 					CommonBean.policyLevelPassedCntr++;
 					break;
@@ -54,17 +56,22 @@ public class CommonElements {
 	
 	public void clickOnConfirmationbutton(String buttonname) {
 		if(buttonname.equalsIgnoreCase("yes")) {
+			Wait.elementToBeClickable(yesElement);
 			yesElement.click();
 		}
 		if(buttonname.equalsIgnoreCase("no")) {
+			Wait.elementToBeClickable(noElement);
 			noElement.click();
 		}
 		if(buttonname.equalsIgnoreCase("ok")) {
+			Wait.elementToBeClickable(okElement);
 			okElement.click();
 		}
 	}
 	
 	public void clickGobutton() {
+		Wait.elementToBeClickable(goElement);
 		goElement.click();
+		CommonBean.policyLevelPassedCntr++;
 	}
 }
