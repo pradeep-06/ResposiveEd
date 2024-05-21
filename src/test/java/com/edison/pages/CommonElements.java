@@ -18,6 +18,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
+import common.Wait;
 import modules.CommonBean;
 
 public class CommonElements {
@@ -39,11 +40,12 @@ public class CommonElements {
 	}
 	
 	public void clickoncontrolpanel() {
+		Wait.elementToBeClickable(ControlpanelElement);
 		ControlpanelElement.click();
 		CommonBean.policyLevelPassedCntr++;
 	}
 	public void clickGobutton() throws SocketException {
-		
+	 Wait.elementToBeClickable(goElement);	
 	 goElement.click();
 		CommonBean.policyLevelPassedCntr++;
 	}

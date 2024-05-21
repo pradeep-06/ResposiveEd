@@ -8,6 +8,7 @@ import com.edison.pages.LoginPage;
 import com.edison.pages.SchoolYearPage;
 
 import common.EdisonBokenLink;
+import common.Wait;
 import modules.BaseClass;
 
 
@@ -20,6 +21,7 @@ public class BasePage extends BaseClass{
 	public static SchoolYearPage objSchoolYearPage=null;
 	public static EdsionBrokenlinkPage objEdsionBrokenlinkPage=null;
 	public static EdisonBokenLink objBokenLink=null;
+	public static Wait wait;
 	
 
 	public static void PageObectInitialization() {
@@ -29,7 +31,9 @@ public class BasePage extends BaseClass{
 		objSchoolYearPage=new SchoolYearPage(driver);
 		objEdsionBrokenlinkPage=new EdsionBrokenlinkPage(driver);
 		objBokenLink=new EdisonBokenLink();
+		wait=new Wait(driver);
 	}
+	
 	
 	public static void destroyPageObjects() {
 		objLoginpage=null;
@@ -37,6 +41,7 @@ public class BasePage extends BaseClass{
 		objInsistitutePage=null;
 		objEdsionBrokenlinkPage=null;
 		objBokenLink=null;
+		wait=null;
 	}
 
 }

@@ -56,7 +56,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>May 16, 2024 02:52:56 PM</span>
+			<span class='label blue darken-3 suite-start-time'>May 21, 2024 10:10:15 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -83,9 +83,9 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@Test:CourseManagement001</a></li>
 					<li><a href='#'>@CourseManagementFilter</a></li>
 					<li><a href='#'>@TestName:CourseManagementFilter</a></li>
-					<li><a href='#'>@Test:CourseManagement001</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -146,7 +146,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>2</span> scenarios passed</span>
+                    <span class='strong'>1</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -166,7 +166,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>20</span> steps passed</span>
+                    <span class='strong'>10</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -196,7 +196,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Administrator - Course Management.</span>
-						<span class='test-time'>May 16, 2024 02:53:05 PM</span>
+						<span class='test-time'>May 21, 2024 10:10:25 AM</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -209,12 +209,12 @@
 
 <div class='scenario outline node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 22 53.915</span>
+	<span class='duration right label'>00 01 29.190</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Verify the Filter Criteria in Course Template</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>COURSE_ID</td><td>FileName</td><td>Sheetname</td><td>FileName2</td><td>FilePath</td></tr><tr><td>COURSE_CODE_003</td><td>EdisonLearning.xlsx</td><td>ELCourseTemplate</td><td>EdsionBrokenLink_AdvMath</td><td>src\test\resources\Edison</td></tr><tr><td>COURSE_CODE_002</td><td>EdisonLearning.xlsx</td><td>ELCourseTemplate</td><td>EdsionBrokenLink_EDMP</td><td>src\test\resources\Edison</td></tr></table></div>
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>COURSE_ID</td><td>FileName</td><td>Sheetname</td><td>FileName2</td><td>FilePath</td></tr><tr><td>COURSE_CODE_003</td><td>EdisonLearning.xlsx</td><td>ELCourseTemplate</td><td>EdsionBrokenLink_AdvMath</td><td>src\test\resources\Edison</td></tr></table></div>
 	
 	
 	<ul class='steps'>
@@ -270,58 +270,6 @@
 				</li>
 			</ul>
 		</li>
-		<li test-id='25' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Verify the Filter Criteria in Course Template</div>
-
-				<div class='category-list'>
-						<span class='category label'>@TestName:CourseManagementFilter</span>
-						<span class='category label'>@Test:CourseManagement001</span>
-						<span class='category label'>@CourseManagementFilter</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='26' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="com.edison.stepdef.CommonSetpdef.readData(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Read the testdata "COURSE_CODE_002" "EdisonLearning.xlsx" "ELCourseTemplate"</h6>
-
-				</li>
-				<li test-id='28' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="com.edison.stepdef.CommonSetpdef.the_user_logs_in_with_valid_credentials()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user logs in with valid credentials</h6>
-
-				</li>
-				<li test-id='30' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.edison.stepdef.CommonSetpdef.clickOnControlPanel()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Click on Control Panel</h6>
-
-				</li>
-				<li test-id='32' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.edison.stepdef.CommonSetpdef.selectOptionInControlPanel(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then select the "Option" in the control panel</h6>
-
-				</li>
-				<li test-id='34' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.edison.stepdef.EdsionBrokenStepdef.select_the_dropdown_values(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When select and enter the dropdown values "Institution" "SearchBy" "Name" "ActiveInactive" in course template</h6>
-
-				</li>
-				<li test-id='36' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.edison.stepdef.CommonSetpdef.click_on_GO_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Click on GO button</h6>
-
-				</li>
-				<li test-id='38' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.edison.stepdef.EdsionBrokenStepdef.verify_the_filter_record_in_course_template_table(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Verify the record in course template table "Code" "Name" "Abbreviation" "ActiveInactive" and click on name</h6>
-
-				</li>
-				<li test-id='40' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.edison.stepdef.EdsionBrokenStepdef.changeDriverFocus()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Change the driver Focus to new window</h6>
-
-				</li>
-				<li test-id='42' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.edison.stepdef.EdsionBrokenStepdef.verifyBrokenLinks(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then verify the broken links in each page "Name" "Code"</h6>
-
-				</li>
-				<li test-id='44' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.edison.stepdef.EdsionBrokenStepdef.writeBrokenToExcel(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Write the broken links in excel file "EdsionBrokenLink_EDMP" "src\test\resources\Edison"</h6>
-
-				</li>
-			</ul>
-		</li>
 	</ul>
 </div>
 					</div>
@@ -368,14 +316,14 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@CourseManagementFilter</span>
+						<span class='category-name'>@Test:CourseManagement001</span>
 						<span class='category-status right'>
-						<span class='label pass'>2</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
 						</div>
@@ -390,13 +338,41 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 16, 2024 02:53:05 PM</td>
+										<td>May 21, 2024 10:10:25 AM</td>
 										<td class='linked' test-id='3'>Verify the Filter Criteria in Course Template</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CourseManagementFilter</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
 									<tr>
-										<td>May 16, 2024 02:54:46 PM</td>
-										<td class='linked' test-id='25'>Verify the Filter Criteria in Course Template</td>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 21, 2024 10:10:25 AM</td>
+										<td class='linked' test-id='3'>Verify the Filter Criteria in Course Template</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -408,12 +384,12 @@
 					<div class='category-heading'>
 						<span class='category-name'>@TestName:CourseManagementFilter</span>
 						<span class='category-status right'>
-						<span class='label pass'>2</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
 						</div>
@@ -428,51 +404,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 16, 2024 02:53:05 PM</td>
+										<td>May 21, 2024 10:10:25 AM</td>
 										<td class='linked' test-id='3'>Verify the Filter Criteria in Course Template</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 16, 2024 02:54:46 PM</td>
-										<td class='linked' test-id='25'>Verify the Filter Criteria in Course Template</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Test:CourseManagement001</span>
-						<span class='category-status right'>
-						<span class='label pass'>2</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 16, 2024 02:53:05 PM</td>
-										<td class='linked' test-id='3'>Verify the Filter Criteria in Course Template</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 16, 2024 02:54:46 PM</td>
-										<td class='linked' test-id='25'>Verify the Filter Criteria in Course Template</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -503,31 +436,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>20</div>
+					<div class='panel-lead'>10</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 16, 2024 02:52:56 PM</div>
+					<div class='panel-lead'>May 21, 2024 10:10:15 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 16, 2024 03:16:07 PM</div>
+			 		<div class='panel-lead'>May 21, 2024 10:12:04 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 23 10.870</div>
+					<div class='panel-lead'>00 01 48.549</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -563,8 +496,17 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
+							<td>@Test:CourseManagement001</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
 							<td>@CourseManagementFilter</td>
-							<td>2</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -573,16 +515,7 @@
 						</tr>
 						<tr>
 							<td>@TestName:CourseManagementFilter</td>
-							<td>2</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@Test:CourseManagement001</td>
-							<td>2</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -607,16 +540,16 @@
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 2,
-				passChild: 2,
+				childCount: 1,
+				passChild: 1,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 20,
-				passGrandChild: 20,
+				grandChildCount: 10,
+				passGrandChild: 10,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -628,7 +561,7 @@
 		
 		<script>
 			var timeline = {
-			        "Administrator - Course Management.":1373.919
+			        "Administrator - Course Management.":89.197
 			};
 		</script>
 		

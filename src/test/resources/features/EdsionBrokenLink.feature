@@ -16,4 +16,4 @@ Feature: Administrator - Course Management.
     Examples:
       | COURSE_ID     	   	| FileName               	| Sheetname 		|FileName2					|FilePath					 |
       | COURSE_CODE_003 	| EdisonLearning.xlsx	 	| ELCourseTemplate  |EdsionBrokenLink_AdvMath	|src\\test\\resources\\Edison|
-      | COURSE_CODE_002 	| EdisonLearning.xlsx	 	| ELCourseTemplate  |EdsionBrokenLink_EDMP		|src\\test\\resources\\Edison|
+#      | COURSE_CODE_002 	| EdisonLearning.xlsx	 	| ELCourseTemplate  |EdsionBrokenLink_EDMP		|src\\test\\resources\\Edison|

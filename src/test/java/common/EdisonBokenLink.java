@@ -145,9 +145,14 @@ public class EdisonBokenLink {
 		cell5.setCellStyle(CellStyle);
 		spreadsheet.autoSizeColumn(4);
 		
+		Cell cell11 = row.createCell(5);
+		cell11.setCellValue("STATUS_CODE");
+		cell11.setCellStyle(CellStyle);
+		spreadsheet.autoSizeColumn(5);
+		
 		int rowcount = 1;
 		System.out.println(EdsionBrokenlinkPage.brokenlinks.size());
-		for (int i = 0; i + 5 <= EdsionBrokenlinkPage.brokenlinks.size(); i = i + 5) {
+		for (int i = 0; i + 6 <= EdsionBrokenlinkPage.brokenlinks.size(); i = i + 6) {
 			Row row2 = spreadsheet.createRow(rowcount);
 			
 			//Course
@@ -181,6 +186,11 @@ public class EdisonBokenLink {
 				cell10.setCellStyle(CellStyle3);
 				cell10.setCellValue(EdsionBrokenlinkPage.brokenlinks.get(i+4));	
 			}
+			
+			Cell cell12 = row2.createCell(5);
+			cell12.setCellStyle(CellStyle1);
+			cell12.setCellValue(EdsionBrokenlinkPage.brokenlinks.get(i+5));
+			spreadsheet.autoSizeColumn(5);
 			rowcount++;
 			FileOutputStream out = new FileOutputStream(new File(FileName));
 			// write operation workbook using file out object

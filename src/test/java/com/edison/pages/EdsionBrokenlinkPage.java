@@ -186,26 +186,42 @@ public void verifyBrokenLinks(String name,String code) throws SocketException{
 						} catch (Exception e) {
 							httpURLConnection.connect();
 						}
-						int statuscode;
+						int statuscode = 0;
+						
 						try {
 							 statuscode=httpURLConnection.getResponseCode();
-						} catch (Exception e) {
-							 statuscode=httpURLConnection.getResponseCode();
+						} catch (java.net.SocketException e) {	
+							 try {
+								 statuscode=httpURLConnection.getResponseCode();
+							 } catch (Exception e2) {
+								 statuscode=507;
+								 brokenlinks.add(name);
+								 brokenlinks.add(code);
+								 brokenlinks.add(Unit_Lesson_page);
+								 brokenlinks.add(url);
+								 brokenlinks.add("FAIL");
+								 brokenlinks.add("Connection failure");
+							 } 			
 						}
-						if (statuscode == 200) {
-							brokenlinks.add(name);
-							brokenlinks.add(code);
-							brokenlinks.add(Unit_Lesson_page);
-							brokenlinks.add(url);
-							brokenlinks.add("PASS");		
-//							System.out.println(url + " - " + httpURLConnection.getResponseMessage());
-						} else {
-							brokenlinks.add(name);
-							brokenlinks.add(code);
-							brokenlinks.add(Unit_Lesson_page);
-							brokenlinks.add(url);
-							brokenlinks.add("FAIL");
+						if(statuscode!=507) {
+							if ((statuscode >=200&&statuscode<=206)||(statuscode>=301&&statuscode<=301)) {
+								brokenlinks.add(name);
+								brokenlinks.add(code);
+								brokenlinks.add(Unit_Lesson_page);
+								brokenlinks.add(url);
+								brokenlinks.add("PASS");
+								brokenlinks.add(Integer.toString(statuscode));
+//								System.out.println(url + " - " + httpURLConnection.getResponseMessage());
+							} else {
+								brokenlinks.add(name);
+								brokenlinks.add(code);
+								brokenlinks.add(Unit_Lesson_page);
+								brokenlinks.add(url);
+								brokenlinks.add("FAIL");
+								brokenlinks.add(Integer.toString(statuscode));
+							}
 						}
+						
 				  }
 				 
 			  }

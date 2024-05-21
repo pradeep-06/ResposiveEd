@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 public class Global {
 	
 	public static WebDriver driver;
-	public static final String QC_PROJECT_NAME="ResponsiveED";
+	public static final String QC_PROJECT_NAME="Edsion";
 	public static final String fldSFolderID="";
 	
 
